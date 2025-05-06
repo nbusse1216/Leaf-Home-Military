@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaf Home Military Programs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #222;
+    }
+
+    .intro {
+      font-size: 1.2em;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    .highlight {
+      background-color: #f9f9f9;
+      border-left: 6px solid #aff17d;
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .highlight h2 {
+      color: #222;
+    }
+
+    .highlight ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .cta {
+      background-color: #aff17d;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .cta h3 {
+      margin-top: 0;
+      color: #000;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Serving Those Who Served</h1>
+    <p class="intro">
+      At Leaf Home, we proudly support our veterans and military families. We believe that service deserves opportunity — and we’re honored to create meaningful careers for those who have sacrificed for our country.
+    </p>
+
+    <section class="highlight">
+      <h2>Dedicated to Veterans & Military Spouses</h2>
+      <p>
+        We are a nationally recognized Military Friendly® company, offering inclusive, purpose-driven opportunities through programs such as:
+      </p>
+      <ul>
+        <li>Hiring Our Heroes Fellowship</li>
+        <li>DoD SkillBridge</li>
+        <li>Army PaYS & P3 Partnerships</li>
+      </ul>
+    </section>
+
+    <section class="cta">
+      <h3>Interested in Joining Our Mission?</h3>
+      <p>Submit your interest and let us connect you with one of our Military Engagement Team members.</p>
+      <a href="#" class="button">Submit Your Interest</a>
+    </section>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const button = document.querySelector(".button");
+
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        const name = prompt("Please enter your name to submit your interest:");
+
+        if (name) {
+          alert(`Thank you, ${name}! Our Military Engagement Team will contact you soon.`);
+        } else {
+          alert("Submission canceled. If you're interested, please try again.");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
