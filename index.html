@@ -43,32 +43,24 @@
       color: #222;
     }
 
-    .highlight ul {
-      text-align: left;
-      padding-left: 20px;
+    .highlight p {
+      margin: 0;
     }
 
-    .cta {
+    .note {
       background-color: #aff17d;
       padding: 20px;
       border-radius: 8px;
+      font-size: 1.1em;
+      margin-top: 20px;
     }
 
-    .cta h3 {
-      margin-top: 0;
-      color: #000;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #222;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
+    .bio {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
     }
   </style>
 </head>
@@ -82,37 +74,19 @@
     <section class="highlight">
       <h2>Dedicated to Veterans & Military Spouses</h2>
       <p>
-        We are a nationally recognized Military Friendly® company, offering inclusive, purpose-driven opportunities through programs such as:
+        Our Head of Military is recognized as a Military Friendly® Veteran Champion of the Year in Corporate America. As a company, Leaf Home has received the DAV Patriot Employer Award, the MOAA Impact Award, and Congressional Special Recognition for our dedication to the veteran community.
       </p>
-      <ul>
-        <li>Hiring Our Heroes Fellowship</li>
-        <li>DoD SkillBridge</li>
-        <li>Army PaYS & P3 Partnerships</li>
-      </ul>
     </section>
 
-    <section class="cta">
-      <h3>Interested in Joining Our Mission?</h3>
-      <p>Submit your interest and let us connect you with one of our Military Engagement Team members.</p>
-      <a href="#" class="button">Submit Your Interest</a>
-    </section>
+    <div class="note">
+      If you're exploring opportunities through SkillBridge, Hiring Our Heroes, or the Army P3 Program, our Military Engagement Team is here to support your journey.
+    </div>
+
+    <div class="bio">
+      <p><strong>Nick Busse</strong><br>
+      Head of Military Relations & Talent at Leaf Home<br>
+      Committed to building a robust internal veteran culture and committee while developing meaningful transition and military spouse talent programs.</p>
+    </div>
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const button = document.querySelector(".button");
-
-      button.addEventListener("click", function (event) {
-        event.preventDefault();
-        const name = prompt("Please enter your name to submit your interest:");
-
-        if (name) {
-          alert(`Thank you, ${name}! Our Military Engagement Team will contact you soon.`);
-        } else {
-          alert("Submission canceled. If you're interested, please try again.");
-        }
-      });
-    });
-  </script>
 </body>
 </html>
